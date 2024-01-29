@@ -9,8 +9,18 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "cli",
+    "acode",
+    "extension",
+    "snippets"
+  ],
+  "author": "Orabueze stanley orabuezestanley@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Udonna-cell/acode-snip-install"
+  },
+  "homepage": "https://github.com/Udonna-cell/acode-snip-install#readme",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.3.0",
