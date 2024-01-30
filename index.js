@@ -11,7 +11,7 @@ async function endPoint(argument) {
   // check if a config file is present
   let config = "/data/data/com.termux/files/home/acode.config.json"
   let isConfig = fs.existsSync(path.resolve(config))
-  log(chalk.gray.underline("checking for config"))
+  log(chalk.gray.underline("  checking for config"))
 
   if (isConfig) {
     log(chalk.green(" found it"))

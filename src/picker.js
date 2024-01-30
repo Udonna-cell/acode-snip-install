@@ -16,7 +16,8 @@ function directory_content(extensionsPath) {
       description: pkg.description,
       value: {
         snipPath: `${extensionsPath}/${i}/snippets`,
-        snippets: pkg.contributes.snippets
+        snippets: pkg.contributes.snippets,
+        name: pkg.name
       }
     }
     extensions.push(info)
