@@ -36,7 +36,7 @@ export async function picker(config) {
     name: 'value',
     message: 'Pick a snippet',
     choices: directory_content(config.extensions),
-    initial: 1
+    // initial: 1
   }
   let response = await prompt(question)
   return(response)
