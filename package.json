@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "type": "module",
-  "bin": "bin/index.js",
+  "bin": {
+    "acode-snip-install": "bin/index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +20,7 @@
   "author": "Orabueze stanley orabuezestanley@gmail.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Udonna-cell/acode-snip-install"
+    "url": "git+https://github.com/Udonna-cell/acode-snip-install.git"
   },
   "homepage": "https://github.com/Udonna-cell/acode-snip-install#readme",
   "license": "ISC",
