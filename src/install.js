@@ -85,6 +85,15 @@ function installSnippet({ value }, configData) {
         // Append snippet to the location
         fs.appendFileSync(location, snip);
       }
+
+      //  footer landmark
+      if (index == arr.length - 1) {
+        // Check for header existence
+        // checker(`#>>>> ${value.name}`, location);
+        const footer = `\n\n#<<<< ${value.name}\n\n`;
+        fs.appendFileSync(location, footer);
+      }
+
     }
   });
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import endPoint from "../index.js"
+import { endPoint, removeEndPoint } from "../index.js"
 
-endPoint()
+(process.argv.slice(2).toString() == "uninstall")? removeEndPoint() : endPoint();
