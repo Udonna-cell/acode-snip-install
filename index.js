@@ -5,6 +5,7 @@ import log from "./src/log.js"
 import install from "./src/install.js"
 import uninstall from "./src/uninstall.js"
 import { picker } from "./src/picker.js"
+import setup from "./src/setup.js"
 
 
 async function endPoint(argument) {
@@ -23,7 +24,7 @@ async function endPoint(argument) {
     install(chose, configData)
   } else {
     log(chalk.red(" config file not found :("))
-
+    setup(endPoint)
   }
   // log(process.argv.slice(2))
 }
@@ -44,21 +45,11 @@ async function removeEndPoint(argument) {
     uninstall(chose, configData.snippets)
   } else {
     log(chalk.red(" config file not found :("))
-
+    setup(removeEndPoint)
   }
 }
 
-// switch (process.argv.slice(2).toString()) {
-//   case 'install':
-//     // code
-//     endPoint()
-//     break;
-//   case 'uninstall':
-//     // code
-//     removeEndPoint()
-//     break;
-
-//   default:
-//   // code
+// function fixe() {
+//   setup()
 // }
 export { endPoint, removeEndPoint }

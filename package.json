@@ -8,7 +8,7 @@
     "acode-snip-install": "bin/index.js"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node bin/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

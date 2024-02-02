@@ -1,10 +1,18 @@
 import prompt from "prompts"
 import fs from "fs"
+import chalk from "chalk"
+// import setup from "./setup.js"
 
 // const directoryPath = '/data/data/com.termux/files/home/extension';
 
 function directory_content(extensionsPath) {
-  let files = fs.readdirSync(extensionsPath)
+  let files;
+  try {
+    files = fs.readdirSync(extensionsPath)
+  } catch (e) {
+    console.log(chalk.red(e))
+    process.exit()
+  }
   let extensions = []
   files.forEach(i => {
     let maps =  `${extensionsPath}/${i}/package.json`
