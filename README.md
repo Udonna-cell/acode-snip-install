@@ -1,6 +1,6 @@
 # acode-snip-install
 
-## Overview
+## Overview ™
 `acode-snip-install` is a command-line interface (CLI) tool designed to facilitate the download and installation of Visual Studio Code (VSCode) snippet extensions for users of the Acode editor.
 
 ## Installation
